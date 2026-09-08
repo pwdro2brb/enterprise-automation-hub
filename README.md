@@ -119,15 +119,14 @@ Use arquivos locais ignorados pelo Git ou variáveis de ambiente para armazenar:
 - parâmetros de pastas;
 - dados de serviços externos.
 
-Nunca publique credenciais, tokens, arquivos ``, `config_emails.json`, planilhas reais ou dados de clientes.
+Nunca publique credenciais, tokens, arquivos locais de configuração, planilhas reais ou dados de clientes.
 
 Para uma integração real, o arquivo de configuração pode seguir esta separação:
 
 ```text
 config.py                 configuracoes locais
 secret_store.py           armazenamento de credenciais
-           arquivo local ignorado pelo Git
-dados_locais.json         mapas e parâmetros locais
+arquivos locais           configurações ignoradas pelo Git
 dispatcher.py             roteamento das ações do hub
 robos/                    módulos Python de automação
 ```
