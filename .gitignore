@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+
+# Production output
+dist/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+config.py
+config_mrv.json
+config_emails.json
+dados_locais.json
+*.key
+*.pem
+
+# Python cache and logs
+__pycache__/
+*.py[cod]
+*.log
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary automation files
+screenshots/
+erro_*.png
+erro_*.html
+historico_execucoes.json
